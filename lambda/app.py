@@ -45,3 +45,5 @@ def response(status, message):
         },
         "body": json.dumps(message)
     }
+
+print("CI/CD pipeline deployment successful")
