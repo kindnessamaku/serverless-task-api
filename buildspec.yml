@@ -11,6 +11,4 @@ phases:
   post_build:
     commands:
       - echo "Updating Lambda function"
-      - aws lambda update-function-code \
-        --function-name TaskApiFunction \
-        --zip-file fileb://function.zip
+      - aws lambda update-function-code --function-name TaskApiFunction --zip-file fileb://function.zip
