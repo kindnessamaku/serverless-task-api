@@ -6,9 +6,9 @@ phases:
       python: 3.11
   build:
     commands:
-      - echo "Zipping Lambda function"
+      - echo "Zipping app.py from the lambda folder..."
       - cd lambda && zip ../function.zip app.py && cd ..
-  post_build:
-    commands:
-      - echo "Updating Lambda function"
-      - aws lambda update-function-code --function-name TaskApiFunction --zip-file fileb://function.zip
+
+artifacts:
+  files:
+    - function.zip
