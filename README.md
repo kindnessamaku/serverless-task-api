@@ -1,6 +1,6 @@
 # Serverless Task Incident Management API
 ## Overview
-This project demonstrates the design and deployment of a serverless incident management REST API on AWS. The system enables engineering teams to create incidents, track timestamps, and monitor service failure latency through a scalable API interface. The application exposes REST endpoints that allow teams to log operational incidents, retrieve incident records for analysis, and delete resolved incidents. Each incident contains timestamp data that can be used to measure failure response time and operational efficiency. It uses fully managed AWS serverless services, eliminating the need to provision or manage infrastructure while ensuring automatic scalability and high availability.
+A production-style serverless API built with AWS that simulates real-world incident tracking and monitoring systems used by DevOps and SRE teams. The system enables engineering teams to create incidents, track timestamps, and monitor service failure latency through a scalable API interface. The application exposes REST endpoints that allow teams to log operational incidents, retrieve incident records for analysis, and delete resolved incidents. Each incident contains timestamp data that can be used to measure failure response time and operational efficiency. It uses fully managed AWS serverless services, eliminating the need to provision or manage infrastructure while ensuring automatic scalability and high availability.
 ## Key Features
 ### The API supports the core lifecycle operations for incident tracking:
 
@@ -16,7 +16,7 @@ This project demonstrates the design and deployment of a serverless incident man
   - Deletes incidents once they are resolved
   - Helps maintain clean operational records
  
-### The System also constitues components of the AWS Well-Architected Framework : 
+### The System also constitutes components of the AWS Well-Architected Framework : 
 - **Serverless Architecture** : It uses AWS serverless services to achieve automatic scaling and high availability without managing servers.
    - Amazon API Gateway for REST API endpoints
    - AWS Lambda for serverless compute
@@ -122,8 +122,8 @@ The build completed successfully and the pipeline resumed normal operation.
 </table>
 
 ## Key Achievements
-- Eliminated the need for always-on servers, saving an estimated 70-90%compared to EC2-based solutions.
-- Reduced debbuging time by 60% using centralized cloudwatch logging.
+- Eliminated the need for always-on servers, saving an estimated 70-90% compared to EC2-based solutions.
+- Reduced debugging time by 60% using centralized cloudwatch logging.
 - Reduced deployment time from 15 minutes to under 3 minutes using CI/CD
 
 
