@@ -1,6 +1,25 @@
 # Serverless Task Incident Management API
+
 ## Overview
 A production-style serverless API built with AWS that simulates real-world incident tracking and monitoring systems used by DevOps and SRE teams. The system enables engineering teams to create incidents, track timestamps, and monitor service failure latency through a scalable API interface. The application exposes REST endpoints that allow teams to log operational incidents, retrieve incident records for analysis, and delete resolved incidents. Each incident contains timestamp data that can be used to measure failure response time and operational efficiency. It uses fully managed AWS serverless services, eliminating the need to provision or manage infrastructure while ensuring automatic scalability and high availability.
+
+## 🛠️ Tech Stack
+
+**Compute** : AWS Lambda – Serverless functions used to process API requests and interact with the database.
+
+**Networking and API Management** : Amazon API Gateway – RESTful endpoints (PUT, GET, DELETE) configured as the front door for the application.
+
+**Database** : Amazon DynamoDB – NoSQL database used for high-speed, scalable incident storage and low-latency retrieval.
+
+**CI/CD** :
+    - AWS CodePipeline – Orchestrated the automated delivery workflow.
+    - AWS CodeBuild – Compiled code and ran build specifications via buildspec.yml.
+    - GitHub – Source control provider integrated with the pipeline.
+    
+**Observability & Monitoring** : Amazon CloudWatch – Used for deep-dive debugging of Lambda execution errors and to monitor API performance and error rates.
+
+**Security** : AWS IAM – Implemented fine-grained, least-privilege policies for Lambda and CodeBuild execution roles.
+
 ## Key Features
 ### The API supports the core lifecycle operations for incident tracking:
 
